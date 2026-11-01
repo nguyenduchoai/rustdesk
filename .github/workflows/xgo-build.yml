@@ -3,6 +3,9 @@ name: XGO Remote Build
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run-flutter-build:
     uses: ./.github/workflows/flutter-build.yml
